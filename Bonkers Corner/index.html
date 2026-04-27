@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonker Corner</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mystyle.css">
+
+    <script src="jquery/jquery-4.0.0.min.js"></script>
+    <script>
+        $(document).ready(function()
+    {
+        $("#cls").click(function()
+    {
+        $("#sto").hide();
+    })
+    })
+    </script>
+</head>
+<body>
+    <form action="product" method="post">
+        <div id="sto1">
+            <div id="sto">
+                <div><img src="images/image1.png" id="img1"></div>
+                <div>
+                    <span id="cls">X</span>
+                    <h4 id="dg">DON'T GET LEFT BEHIND</h4>
+                    <h6 id="dg1">Race to  Checkout: Drift 2.0 Live</h6>
+                    <button class="btn" id="btn1">+91</button>&nbsp;<input type="text" id="mn" name="test" placeholder="Enter Mobile Number" autofocus>
+                    <button class="btn" id="btn2" onclick="return joinus()">Join Us</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        setTimeout(function() {
+        document.getElementById("sto1").style.display="block";
+    }, 5000);
+    </script>
+    <div class="marquee">
+        <div class="marquee-track">
+        <span>₹ Extra 10% OFF | Use code SHARKTANK10 | Min. cart ₹500</span>
+        <span>As SEEN ON SHARK TANK</span>
+    
+        <!-- duplicate for seamless loop -->
+        <span>₹ Extra 10% OFF | Use code SHARKTANK10 | Min. cart ₹500</span>
+        <span>As SEEN ON SHARK TANK</span>
+        </div>
+    </div>
+    <div id="menu">
+        <div id="menu1">WOMEN ▼</div>
+        <div id="menu2">MEN ▼</div>
+        <div id="menu3">ACCESSORIES ▼</div>
+        <div id="menu4"><input type="text" placeholder="Search..."></div>
+        <div id="menu5"><i class="fa-solid fa-circle-user"></i></div>
+        <div id="menu6"><i class="fa-solid fa-bag-shopping"  onclick="bag()"></i><span id="cl" onclick="sc()">0</span></div>
+    </div>
+    <div id="lp">
+        <div>
+            <img src="images/l1.webp" id="img2">
+            <center><h4 id="pf"><b>PREMIUM FABRICS, DESIGNED TO LAST</b></h4></center>
+            <center><h1 id="e"><b>EVERYDAY ESSENTIALS</b></h1></center>
+            <center><button class="btn" id="li"><a href="index.html" style="text-decoration: none; color: black;">SHOP NOW </a></button></center>
+        </div>
+    </div>
+    <div id="text">
+        <span id="ni">New In</span>
+        <h4 id="up">Upgrade your closet with everything trendy and new</h4>
+    </div>
+    <div id="product">
+        <form action="product" method="post">
+            <input type="hidden" id="hmn" name="test">
+            <input type="hidden" id="himg3" name="IMAGE">
+            <input type="hidden" id="hmn1" name="NAME">
+            <input type="hidden" id="hpr1" name="PRICE">
+            <input type="hidden" id="hqty" name="QTY">
+            <div id="product1">
+                <abbr title="DRAGLINE TRACK PANTS" style="cursor: pointer;"><img src="images/product1.webp" id="img3"></abbr>
+                <button type="submit" class="btn" id="btn3" onclick="atc(this.form,'img3','nm1','pr1')">ADD TO CART</button>
+                <br><br><br>
+                <span id="nm1"><b>DRAGLINE TRACK PANTS</b></span><br>
+                <strike id="ct1">Rs.1,899.00</strike>&ensp;&ensp;<span id="pr1">Rs.1,499.00</span>
+                <i class="fa-regular fa-heart like-btn" style="color: black;" id="lk" onclick="lk('lk')"></i>
+                <br>
+                <button id="sa1">SAVE 21%</button><br>
+            </div>
+        </form>
+        <form action="product" method="post">
+            <input type="hidden" id="hmn" name="test">
+            <input type="hidden" id="himg4" name="IMAGE">
+            <input type="hidden" id="hmn2" name="NAME">
+            <input type="hidden" id="hpr2" name="PRICE">
+            <input type="hidden" id="hqty" name="QTY">
+            <div id="product2">
+                <abbr title="OVERSIZED T-SHIRT" style="cursor: pointer;"><img src="images/product2.webp" id="img4"></abbr>
+                <button class="btn" id="btn4" type="submit" onclick="atc(this.form,'img4','nm2','pr2')">ADD TO CART</button>
+                <br><br><br>
+                <span id="nm2"><b>OVERSIZED T-SHIRT</b></span><br>
+                <strike id="ct2">Rs.1,299.00</strike>&ensp;&ensp;<span id="pr2">Rs.9,99.00</span>
+                <i class="fa-regular fa-heart like-btn" style="color: black;" id="lk1" onclick="lk('lk1')"></i>
+                <br>
+                <button id="sa2">SAVE 23%</button><br>
+            </div>
+        </form>
+        <form action="product" method="post">
+            <input type="hidden" id="hmn" name="test">
+            <input type="hidden" id="himg5" name="IMAGE">
+            <input type="hidden" id="hmn3" name="NAME">
+            <input type="hidden" id="hpr3" name="PRICE">
+            <input type="hidden" id="hqty" name="QTY">
+        <div id="product3">
+            <abbr title="OVERDRIVE T-SHIRT" style="cursor: pointer;"><img src="images/product3.webp" id="img5"></abbr>
+            <button class="btn" id="btn5" type="submit" onclick="atc(this.form,'img5','nm3','pr3')">ADD TO CART</button>
+            <br><br><br>
+            <span id="nm3"><b>OVERDRIVE T-SHIRT</b></span><br>
+            <strike id="ct3">Rs.1,299.00</strike>&ensp;&ensp;<span id="pr3">Rs.1,099.00</span>
+            <i class="fa-regular fa-heart like-btn" style="color: black;" id="lk2" onclick="lk('lk2')"></i>
+            <br>
+            <button id="sa3">SAVE 15%</button><br>
+        </div>
+    </div>
+    <div id="footer">
+            <img src="images/footer.webp" id="img6">
+    </div>
+    <div id="op">
+       
+    </div>
+    <div id="op1">
+        <span style="float: right; cursor: pointer;" onclick="cls2()">X</span>
+        <h5 id="yc"><b>Your Cart (0 items)</b></h5>
+
+        <div id="gtmain">
+            <div class="offer"><b>Get 10% off with code EXTRA10</b></div>
+            <div class="offer"><b>Get 15% off with code GOBONKERS15</b></div>
+            <div class="offer"><b>Get 20% off with code GOBONKERS20</b></div>
+            <div class="offer">
+                <b>New customers enjoy 15% OFF! <br> Use code NEW15 on orders above ₹2000</b>
+            </div>
+        </div>
+        <center><h5><b>Nothing here</b></h5></center>
+        <center><button class="btn" id="btn6"><b><a href="index.html" style="text-decoration: none; color: black;">Explore products</a></b></button></center>
+    </div>
+    <script>
+        function lk(lkid)
+        {
+            let lk=document.getElementById(lkid);
+            //if(lk.style.color=="black")
+            if(lk.classList.contains("fa-regular"))
+        {
+            lk.classList.remove("fa-regular");
+            lk.classList.add("fa-solid");
+            lk.style.color='red';
+            //alert("Product has been added to your wishlist");
+            setTimeout(function() {
+            alert("Product has been added to your wishlist");
+        }, 50);
+        }
+        else
+        {
+            lk.classList.remove("fa-solid");
+            lk.classList.add("fa-regular");
+            lk.style.color='black';
+            //alert("Product has been successfully removed from wishlist");
+             setTimeout(function() {
+            alert("Product has been successfully removed from wishlist");
+        }, 50);
+        }
+        }
+
+        //let cart=[];
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        function saveCart()
+        {
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+        function atc(form,imgid,nmid,prid)
+        {
+            let image=document.getElementById(imgid).getAttribute("src");
+            let name=document.getElementById(nmid).innerText;
+            let priceText=document.getElementById(prid).innerText;
+            let price = parseFloat(priceText.replace(/[^0-9.]/g, ""));
+            cart.push({image,name,price,qty:1});
+            saveCart();
+            document.getElementById("cl").innerHTML=cart.length;
+            let test=localStorage.getItem("mobileNumber");
+            form.test.value=test;
+            form.IMAGE.value=image;
+            form.NAME.value=name;
+            form.PRICE.value=price;
+            form.QTY.value = 1;
+        }
+       
+
+        function sc()
+        {
+            if(cart.length==0)
+        {
+            let op1=document.getElementById("op1");
+            op1.style.display="block";
+        }
+        else
+        {
+            let op=document.getElementById("op");
+            op.style.display='block';
+            op.innerHTML="";
+            cart.map((v,i)=>
+        {
+            //document.write(`<img src="${v.image}"style="width:20vw; height:40vh;"><br> ${v.name}<br> ${v.price}<hr>`);
+            let total = v.price * v.qty;
+            op.innerHTML+=(` <span style="float:right; cursor: pointer;" onclick="closecart()">X</span> <img src="${v.image}"style="width:20vw; height:40vh; margin-top:3vh; margin-left:1vw; border-radius:10px;"><br> <span id="nme" style="margin-left:1vw;"><b>${v.name}</b></span><br> <span id="pre" style="margin-left:1vw;">${v.price}</span> <br><span id="to" style="margin-left:1vw;">₹${total}</span>
+            <br><br><button class="btn" style="margin-left:1vw;" onclick="dq(${i})">-</button>&ensp;&ensp;${v.qty}<button class="btn" style="margin-left:1vw;" onclick="iq(${i})">+</button>
+            <br><br><button class="btn btn-danger" style="margin-left:1vw;" onclick="Remove(${i})">Remove</button><hr>`);
+        })
+        }
+        }
+        
+        function bag()
+        {
+            if(cart.length==0)
+        {
+            let op1=document.getElementById("op1");
+            op1.style.display="block";
+        }
+        else
+        {
+            let op=document.getElementById("op");
+            op.style.display='block';
+            op.innerHTML="";
+            cart.map((v,i)=>
+        {
+            //document.write(`<img src="${v.image}"style="width:20vw; height:40vh;"><br> ${v.name}<br> ${v.price}<hr>`);
+            let total = v.price * v.qty;
+            op.innerHTML+=(` <span style="float:right; cursor: pointer;" onclick="closecart()">X</span> <img src="${v.image}"style="width:20vw; height:40vh; margin-top:3vh; margin-left:1vw; border-radius:10px;"><br> <span id="nme" style="margin-left:1vw;"><b>${v.name}</b></span><br> <span id="pre" style="margin-left:1vw;">${v.price}</span> <br><span id="to" style="margin-left:1vw;">₹${total}</span>
+            <br><br><button class="btn" style="margin-left:1vw;" onclick="dq(${i})">-</button>&ensp;&ensp;${v.qty}<button class="btn" style="margin-left:1vw;" onclick="iq(${i})">+</button>
+            <br><br><button class="btn btn-danger" style="margin-left:1vw;" onclick="Remove(${i})">Remove</button><hr>`);
+        })
+        }
+        }
+
+        function closecart()
+        {
+            document.getElementById("op").style.display="none";
+        }
+
+        /*function iq(index)
+        {
+            cart[index].qty++
+            saveCart();
+            sc();
+        }*/
+       function iq(index)
+{
+    cart[index].qty++;
+
+    let item = cart[index];
+    let total = item.price * item.qty;
+
+    console.log("UPDATED ITEM:");
+    console.log("Name:", item.name);
+    console.log("Quantity:", item.qty);
+    console.log("Total Price:", total);
+
+    // ✅ SEND TO SERVER
+    fetch("/product", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        test: localStorage.getItem("mobileNumber"), // ✅ FIX
+        IMAGE: item.image,                          // ✅ FIX
+        NAME: item.name,
+        PRICE: total,
+        QTY: item.qty
+    })
+});
+
+    saveCart();
+    sc();
+}
+
+        /*function dq(index)
+        {
+            if(cart[index].qty>1)
+        {
+            cart[index].qty--
+        }
+        else
+        {
+            cart.splice(index,1)   
+        }
+            saveCart();
+            document.getElementById("cl").innerHTML=cart.length;
+            document.getElementById("op").style.display="none";
+            sc();
+        }*/
+       function dq(index)
+{
+    let item = cart[index];
+
+    if(item.qty > 1)
+    {
+        item.qty--;
+
+        let total = item.price * item.qty;
+
+        // ✅ UPDATE
+        fetch("/product", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                test: localStorage.getItem("mobileNumber"),
+                IMAGE: item.image,
+                NAME: item.name,
+                PRICE: total,
+                QTY: item.qty
+            })
+        });
+    }
+    else
+    {
+        // ✅ IMPORTANT: SEND REMOVE REQUEST
+        fetch("/product", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                test: localStorage.getItem("mobileNumber"),
+                IMAGE: item.image,
+                NAME: item.name,
+                PRICE: 0,
+                QTY: 0,
+                ACTION: "REMOVE"
+            })
+        });
+
+        console.log("REMOVED:", item.name);
+
+        cart.splice(index,1);
+    }
+
+    saveCart();
+    document.getElementById("cl").innerHTML = cart.length;
+    document.getElementById("op").style.display = "none";
+    sc();
+}
+
+        /*function Remove(index)
+        {
+            cart.splice(index,1)
+            document.getElementById("cl").innerHTML=cart.length;
+            document.getElementById("op").style.display="none";
+            saveCart();
+            sc();
+        }*/
+
+        function Remove(index)
+{
+    let item = cart[index]; // get item before deleting
+
+    console.log("REMOVED ITEM:", item.name);
+
+    // ✅ SEND REMOVE INFO TO SERVER
+    fetch("/product", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            test: localStorage.getItem("mobileNumber"),
+            IMAGE: item.image,
+            NAME: item.name,
+            PRICE: 0,
+            QTY: 0,   // 👈 important (means removed)
+            ACTION: "REMOVE" // optional (better for backend)
+        })
+    });
+
+    // remove from cart
+    cart.splice(index,1);
+
+    saveCart();
+
+    document.getElementById("cl").innerHTML = cart.length;
+    document.getElementById("op").style.display = "none";
+
+    sc();
+}
+
+        function cls2()
+        {
+            op1.style.display="none";
+        }
+        window.onload = function()
+        {
+            document.getElementById("cl").innerHTML = cart.length;
+        }
+
+        /*function joinus()
+        {
+            let mobile=document.getElementById("mn").value;
+            if(mobile=="")
+        {
+            alert("Please Enter Mobile Number");
+        }
+        else if(mobile.length!=10)
+        {
+            alert("Please Enter Valid Mobile Number");
+        }
+        else
+        {
+            alert("Login Successfully");
+        }
+        }*/
+       window.onload = function()
+{
+    document.getElementById("cl").innerHTML = cart.length;
+
+    // ✅ Get mobile from localStorage
+    let savedMobile = localStorage.getItem("mobileNumber");
+
+    if(savedMobile)
+    {
+        document.getElementById("mn").value = savedMobile;
+    }
+}
+       function joinus()
+{
+    let mobile = document.getElementById("mn").value;
+
+    if(mobile == "")
+    {
+        alert("Please Enter Mobile Number");
+        return false;
+    }
+    else if(mobile.length != 10)
+    {
+        alert("Please Enter Valid Mobile Number");
+        return false;
+    }
+    else
+    {
+        // ✅ Store in localStorage
+        localStorage.setItem("mobileNumber", mobile);
+
+        alert("Login Successfully");
+        return true;
+
+        // Optional: clear input
+        //document.getElementById("mn").value = "";
+    }
+}
+    </script>
+    <script>
+let index = 0;
+let offers = document.querySelectorAll(".offer");
+
+function showOffer()
+{
+    // remove active from all
+    offers.forEach(o => o.classList.remove("active"));
+
+    // show current
+    offers[index].classList.add("active");
+
+    index++;
+
+    if(index >= offers.length)
+    {
+        index = 0;
+    }
+}
+
+// run every 2 seconds
+setInterval(showOffer, 4000);
+
+// start first
+showOffer();
+</script>
+</body>
+</html>
